@@ -1,0 +1,51 @@
+.app {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.search label {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.search input {
+  width: 14rem;
+}
+
+.reset {
+  padding: 0.25rem 1rem;
+  border: 2px solid #5b21b6;
+  color: #5b21b6;
+  background-color: #ede9fe;
+  font-weight: 600;
+}
+
+.reset:hover {
+  cursor: pointer;
+}
+
+#search {
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+#search:focus {
+  outline: 1px solid #5b21b6;
+}
+
+.output span {
+  font-weight: 600;
+}

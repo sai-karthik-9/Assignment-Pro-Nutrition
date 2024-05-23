@@ -1,0 +1,59 @@
+.food {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #eee;
+  padding: 1rem;
+  width: fit-content;
+}
+
+.food img {
+  width: 6rem;
+}
+
+.food input {
+  height: 1.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info p {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.input {
+  background-color: #5b21b6;
+  border: 2px solid #5b21b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input input,
+.input button {
+  border: 0px;
+  font-size: 1rem;
+}
+
+.input input {
+  padding: 0.25rem;
+}
+
+.input input:focus {
+  outline: 0px;
+}
+
+.input button {
+  background-color: #6d28d9;
+  padding: 0 0.25rem;
+  color: white;
+  font-weight: 500;
+}
+
+.input button:hover {
+  cursor: pointer;
+}
