@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import FoodBox from "./components/FoodBox/FoodBox";
 import FoodData from "./components/FoodData";
 import Search from "./components/Search/Search";
@@ -16,13 +16,15 @@ const App = () => {
     setCount(value);
   };
 
-  const filteredFoodData = useMemo(() => {
+  const getFilteredFoodData = () => {
     if (!search) return FoodData;
 
     return FoodData.filter((food) =>
       food.name.toLowerCase().includes(search.toLowerCase())
     );
-  }, [search]);
+  };
+
+  const filteredFoodData = getFilteredFoodData();
 
   return (
     <div className="app">
